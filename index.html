@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>カルーセル投稿一覧</title>
+<style>
+body { margin: 0; background: #F7F6F2; color: #2C2C2C; font-family: 'Hiragino Sans', 'Yu Gothic', Meiryo, sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 20px; color: #1C3A5C; }
+.note { font-size: 13px; opacity: .7; margin-bottom: 24px; line-height: 1.7; }
+article { background: #fff; border: 1px solid #D8D5CB; border-radius: 10px; padding: 16px; margin-bottom: 24px; }
+h2 { font-size: 17px; margin: 0 0 12px; }
+.thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 12px; }
+.thumbs img { width: 100%; display: block; border: 1px solid #D8D5CB; }
+button { font: inherit; font-size: 16px; width: 100%; padding: 14px; margin-top: 8px; border: 1px solid #1C3A5C; border-radius: 8px; background: #1C3A5C; color: #fff; }
+button.sub { background: #F7F6F2; color: #1C3A5C; }
+button:active { opacity: .7; }
+.status { font-size: 13px; margin-top: 8px; min-height: 1.2em; color: #1C3A5C; }
+details { margin-top: 12px; font-size: 13px; }
+pre { white-space: pre-wrap; font: inherit; line-height: 1.7; }
+</style>
+</head>
+<body>
+<main>
+<h1>カルーセル投稿一覧</h1>
+<p class="note">「7枚を保存」を押すと、保存の画面が開きます。iPhoneは「画像を保存」、Androidは保存先を選んでください。開かないときは、自動で1枚ずつダウンロードされます。</p>
+<article data-title="声をかけられやすい店の5つの待ち方" data-files="outputs/声をかけられやすい店の5つの待ち方/01.png|outputs/声をかけられやすい店の5つの待ち方/02.png|outputs/声をかけられやすい店の5つの待ち方/03.png|outputs/声をかけられやすい店の5つの待ち方/04.png|outputs/声をかけられやすい店の5つの待ち方/05.png|outputs/声をかけられやすい店の5つの待ち方/06.png|outputs/声をかけられやすい店の5つの待ち方/07.png">
+<h2>声をかけられやすい店の5つの待ち方</h2>
+<div class="thumbs"><img src="outputs/声をかけられやすい店の5つの待ち方/01.png" alt="1枚目" loading="lazy"><img src="outputs/声をかけられやすい店の5つの待ち方/02.png" alt="2枚目" loading="lazy"><img src="outputs/声をかけられやすい店の5つの待ち方/03.png" alt="3枚目" loading="lazy"><img src="outputs/声をかけられやすい店の5つの待ち方/04.png" alt="4枚目" loading="lazy"><img src="outputs/声をかけられやすい店の5つの待ち方/05.png" alt="5枚目" loading="lazy"><img src="outputs/声をかけられやすい店の5つの待ち方/06.png" alt="6枚目" loading="lazy"><img src="outputs/声をかけられやすい店の5つの待ち方/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+お客様に声をかけて、嫌がられた経験はありませんか。
+自分から追うのではなく、声をかけられる側に回るための5つの待ち方をまとめました。
+
+1. 声をかけられる場所で待つ
+2. 作業をしながら待つ
+3. 会話のきっかけを一言添える
+4. まず挨拶で声をかける
+5. 声をかけやすい姿を確かめる
+
+今日の一歩は、売り場で作業をしながら、声をかけられやすい場所で待ってみることです。
+保存して見返してください。自分の店の待ち方に迷うときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #接客 #声かけ #小規模店舗 #販売員</pre></details>
+</article>
+<article data-title="比べられても選ばれる5つの理由づくり" data-files="outputs/比べられても選ばれる5つの理由づくり/01.png|outputs/比べられても選ばれる5つの理由づくり/02.png|outputs/比べられても選ばれる5つの理由づくり/03.png|outputs/比べられても選ばれる5つの理由づくり/04.png|outputs/比べられても選ばれる5つの理由づくり/05.png|outputs/比べられても選ばれる5つの理由づくり/06.png|outputs/比べられても選ばれる5つの理由づくり/07.png">
+<h2>比べられても選ばれる5つの理由づくり</h2>
+<div class="thumbs"><img src="outputs/比べられても選ばれる5つの理由づくり/01.png" alt="1枚目" loading="lazy"><img src="outputs/比べられても選ばれる5つの理由づくり/02.png" alt="2枚目" loading="lazy"><img src="outputs/比べられても選ばれる5つの理由づくり/03.png" alt="3枚目" loading="lazy"><img src="outputs/比べられても選ばれる5つの理由づくり/04.png" alt="4枚目" loading="lazy"><img src="outputs/比べられても選ばれる5つの理由づくり/05.png" alt="5枚目" loading="lazy"><img src="outputs/比べられても選ばれる5つの理由づくり/06.png" alt="6枚目" loading="lazy"><img src="outputs/比べられても選ばれる5つの理由づくり/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+お客様は、他の店やネットの商品と見比べています。
+それでも自店で買ってもらうための、理由の作り方を5つにまとめました。
+
+1. お客様は比べていると知る
+2. この店で買う理由を作る
+3. 他店の良さを知って勝ち筋を探す
+4. 価格以外の強みを探す
+5. 想定外の提案を用意する
+
+今日の一歩は、他店と比べたときの自店の強みを一つ書き出すことです。
+保存して見返してください。自分の店の強みの見つけ方に迷うときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #接客 #差別化 #提案力 #小規模店舗</pre></details>
+</article>
+<article data-title="判断の回数を減らす5つの提案の考え方" data-files="outputs/判断の回数を減らす5つの提案の考え方/01.png|outputs/判断の回数を減らす5つの提案の考え方/02.png|outputs/判断の回数を減らす5つの提案の考え方/03.png|outputs/判断の回数を減らす5つの提案の考え方/04.png|outputs/判断の回数を減らす5つの提案の考え方/05.png|outputs/判断の回数を減らす5つの提案の考え方/06.png|outputs/判断の回数を減らす5つの提案の考え方/07.png">
+<h2>判断の回数を減らす5つの提案の考え方</h2>
+<div class="thumbs"><img src="outputs/判断の回数を減らす5つの提案の考え方/01.png" alt="1枚目" loading="lazy"><img src="outputs/判断の回数を減らす5つの提案の考え方/02.png" alt="2枚目" loading="lazy"><img src="outputs/判断の回数を減らす5つの提案の考え方/03.png" alt="3枚目" loading="lazy"><img src="outputs/判断の回数を減らす5つの提案の考え方/04.png" alt="4枚目" loading="lazy"><img src="outputs/判断の回数を減らす5つの提案の考え方/05.png" alt="5枚目" loading="lazy"><img src="outputs/判断の回数を減らす5つの提案の考え方/06.png" alt="6枚目" loading="lazy"><img src="outputs/判断の回数を減らす5つの提案の考え方/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+提案を重ねるほど、お客様は迷っていませんか。
+判断の回数を減らす、提案の考え方を5つにまとめました。
+
+1. 追加の提案を重ねない
+2. 選択肢が多いと選べなくなる
+3. 主役と関連品を一つで考える
+4. 検討中に伝え、会計前に済ます
+5. 一回の決断で悩みを解消する
+
+2つ目の考え方は、心理学の「選択肢過多」です。アイエンガーとレッパーの2000年の研究（Journal of Personality and Social Psychology）で、選択肢が多いと選ぶこと自体が負担になることがある、と示されました。
+
+今日の一歩は、自店でよく一緒に買われる組み合わせを一つ書き出して、セットの提案を考えることです。
+保存して見返してください。自分の店に合うセットに迷うときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #接客 #提案力 #心理学 #小規模店舗</pre></details>
+</article>
+<article data-title="お出迎えとお見送りを整える5つの考え方" data-files="outputs/お出迎えとお見送りを整える5つの考え方/01.png|outputs/お出迎えとお見送りを整える5つの考え方/02.png|outputs/お出迎えとお見送りを整える5つの考え方/03.png|outputs/お出迎えとお見送りを整える5つの考え方/04.png|outputs/お出迎えとお見送りを整える5つの考え方/05.png|outputs/お出迎えとお見送りを整える5つの考え方/06.png|outputs/お出迎えとお見送りを整える5つの考え方/07.png">
+<h2>お出迎えとお見送りを整える5つの考え方</h2>
+<div class="thumbs"><img src="outputs/お出迎えとお見送りを整える5つの考え方/01.png" alt="1枚目" loading="lazy"><img src="outputs/お出迎えとお見送りを整える5つの考え方/02.png" alt="2枚目" loading="lazy"><img src="outputs/お出迎えとお見送りを整える5つの考え方/03.png" alt="3枚目" loading="lazy"><img src="outputs/お出迎えとお見送りを整える5つの考え方/04.png" alt="4枚目" loading="lazy"><img src="outputs/お出迎えとお見送りを整える5つの考え方/05.png" alt="5枚目" loading="lazy"><img src="outputs/お出迎えとお見送りを整える5つの考え方/06.png" alt="6枚目" loading="lazy"><img src="outputs/お出迎えとお見送りを整える5つの考え方/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+お客様を迎える一言が、毎回同じになっていませんか。
+お出迎えとお見送りを整える、5つの考え方をまとめました。
+
+1. 来店したら早く迎える
+2. 来店のたびに言葉を変える
+3. お見送りも同じ丁寧さで
+4. 忙しい日も同じ対応を目指す
+5. 変わらない対応を重ねる
+
+今日の一歩は、自店のお出迎えとお見送りで、いま使っている言葉を書き出すことです。
+保存して見返してください。自分の店に合う言葉に迷うときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #接客 #お出迎え #お見送り #リピーター #小規模店舗</pre></details>
+</article>
+<article data-title="潜在ニーズを引き出す質問のしかた" data-files="outputs/潜在ニーズを引き出す質問のしかた/01.png|outputs/潜在ニーズを引き出す質問のしかた/02.png|outputs/潜在ニーズを引き出す質問のしかた/03.png|outputs/潜在ニーズを引き出す質問のしかた/04.png|outputs/潜在ニーズを引き出す質問のしかた/05.png|outputs/潜在ニーズを引き出す質問のしかた/06.png|outputs/潜在ニーズを引き出す質問のしかた/07.png">
+<h2>潜在ニーズを引き出す質問のしかた</h2>
+<div class="thumbs"><img src="outputs/潜在ニーズを引き出す質問のしかた/01.png" alt="1枚目" loading="lazy"><img src="outputs/潜在ニーズを引き出す質問のしかた/02.png" alt="2枚目" loading="lazy"><img src="outputs/潜在ニーズを引き出す質問のしかた/03.png" alt="3枚目" loading="lazy"><img src="outputs/潜在ニーズを引き出す質問のしかた/04.png" alt="4枚目" loading="lazy"><img src="outputs/潜在ニーズを引き出す質問のしかた/05.png" alt="5枚目" loading="lazy"><img src="outputs/潜在ニーズを引き出す質問のしかた/06.png" alt="6枚目" loading="lazy"><img src="outputs/潜在ニーズを引き出す質問のしかた/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+すすめたのに「そこまでは求めていない」と言われた経験はありませんか。
+原因は、お客様自身がまだ気づいていない必要性が、表に出ていないことにあります。
+質問で気づきをつくる、5つの考え方をまとめました。
+
+1. 質問は2種類あると知る
+2. まず現状の確認から始める
+3. 困った経験を聞いてみる
+4. 提案は急がず見極める
+5. 質問のリストをつくる
+
+今日の一歩は、自分の店の現状を確認する質問を3つ書き出すことです。
+保存して見返してください。自分の店に合う質問がまとまらないときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #接客 #ヒアリング #潜在ニーズ #小規模店舗</pre></details>
+</article>
+<article data-title="感動は小さな工夫の積み重ねで生まれる" data-files="outputs/感動は小さな工夫の積み重ねで生まれる/01.png|outputs/感動は小さな工夫の積み重ねで生まれる/02.png|outputs/感動は小さな工夫の積み重ねで生まれる/03.png|outputs/感動は小さな工夫の積み重ねで生まれる/04.png|outputs/感動は小さな工夫の積み重ねで生まれる/05.png|outputs/感動は小さな工夫の積み重ねで生まれる/06.png|outputs/感動は小さな工夫の積み重ねで生まれる/07.png">
+<h2>感動は小さな工夫の積み重ねで生まれる</h2>
+<div class="thumbs"><img src="outputs/感動は小さな工夫の積み重ねで生まれる/01.png" alt="1枚目" loading="lazy"><img src="outputs/感動は小さな工夫の積み重ねで生まれる/02.png" alt="2枚目" loading="lazy"><img src="outputs/感動は小さな工夫の積み重ねで生まれる/03.png" alt="3枚目" loading="lazy"><img src="outputs/感動は小さな工夫の積み重ねで生まれる/04.png" alt="4枚目" loading="lazy"><img src="outputs/感動は小さな工夫の積み重ねで生まれる/05.png" alt="5枚目" loading="lazy"><img src="outputs/感動は小さな工夫の積み重ねで生まれる/06.png" alt="6枚目" loading="lazy"><img src="outputs/感動は小さな工夫の積み重ねで生まれる/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+喜んでもらえる接客をしているのに、感動までは届いていない気がする。
+お客様の感動をつくる、5つの考え方をまとめました。
+
+1. 簡単には感動しないと知る
+2. 小さな喜びを積み重ねる
+3. 先に不満の芽を取り除く
+4. 店の外にヒントを探す
+5. 場面ごとに一つずつ考える
+
+今日の一歩は、入店から退店までの流れを場面ごとに書き出して、一つ選ぶことです。
+保存して見返してください。自分の店に合う工夫が決まらないときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #接客 #顧客満足 #リピーター #小規模店舗</pre></details>
+</article>
+<article data-title="声かけの不発を防ぐ5つの間合い" data-files="outputs/声かけの不発を防ぐ5つの間合い/01.png|outputs/声かけの不発を防ぐ5つの間合い/02.png|outputs/声かけの不発を防ぐ5つの間合い/03.png|outputs/声かけの不発を防ぐ5つの間合い/04.png|outputs/声かけの不発を防ぐ5つの間合い/05.png|outputs/声かけの不発を防ぐ5つの間合い/06.png|outputs/声かけの不発を防ぐ5つの間合い/07.png">
+<h2>声かけの不発を防ぐ5つの間合い</h2>
+<div class="thumbs"><img src="outputs/声かけの不発を防ぐ5つの間合い/01.png" alt="1枚目" loading="lazy"><img src="outputs/声かけの不発を防ぐ5つの間合い/02.png" alt="2枚目" loading="lazy"><img src="outputs/声かけの不発を防ぐ5つの間合い/03.png" alt="3枚目" loading="lazy"><img src="outputs/声かけの不発を防ぐ5つの間合い/04.png" alt="4枚目" loading="lazy"><img src="outputs/声かけの不発を防ぐ5つの間合い/05.png" alt="5枚目" loading="lazy"><img src="outputs/声かけの不発を防ぐ5つの間合い/06.png" alt="6枚目" loading="lazy"><img src="outputs/声かけの不発を防ぐ5つの間合い/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+声をかけたのに、気まずい空気になった経験はありませんか。
+声をかける前に整えたい、5つの間合いをまとめました。
+
+1. 入店直後は声をかけない
+2. お客様のペースを乱さない
+3. 探す前に話しかけない
+4. 脈のあるお客様を見極める
+5. 警戒されたら一度離れる
+
+今日の一歩は、来店直後のお客様に声をかけず、まず見守ってみることです。
+保存して見返してください。自分の店の声かけに迷うときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #接客 #声かけ #小規模店舗 #販売員</pre></details>
+</article>
+<article data-title="口コミを自然にもらう5つの頼み方" data-files="outputs/口コミを自然にもらう5つの頼み方/01.png|outputs/口コミを自然にもらう5つの頼み方/02.png|outputs/口コミを自然にもらう5つの頼み方/03.png|outputs/口コミを自然にもらう5つの頼み方/04.png|outputs/口コミを自然にもらう5つの頼み方/05.png|outputs/口コミを自然にもらう5つの頼み方/06.png|outputs/口コミを自然にもらう5つの頼み方/07.png">
+<h2>口コミを自然にもらう5つの頼み方</h2>
+<div class="thumbs"><img src="outputs/口コミを自然にもらう5つの頼み方/01.png" alt="1枚目" loading="lazy"><img src="outputs/口コミを自然にもらう5つの頼み方/02.png" alt="2枚目" loading="lazy"><img src="outputs/口コミを自然にもらう5つの頼み方/03.png" alt="3枚目" loading="lazy"><img src="outputs/口コミを自然にもらう5つの頼み方/04.png" alt="4枚目" loading="lazy"><img src="outputs/口コミを自然にもらう5つの頼み方/05.png" alt="5枚目" loading="lazy"><img src="outputs/口コミを自然にもらう5つの頼み方/06.png" alt="6枚目" loading="lazy"><img src="outputs/口コミを自然にもらう5つの頼み方/07.png" alt="7枚目" loading="lazy"></div>
+<button type="button" onclick="saveAll(this)">7枚を保存</button>
+<button type="button" class="sub" onclick="copyCaption(this)">キャプションをコピー</button>
+<div class="status"></div>
+<details><summary>キャプションを見る</summary><pre>淡路島で店舗を営む方へ。
+口コミをお願いしても、なかなか書いてもらえない。
+頼み方の前に整えたい、5つの考え方をまとめました。
+
+1. 頼む前に感動をつくる
+2. 待ち時間の過ごし方を考える
+3. 常連のお客様から頼み始める
+4. 来店のたびにお願いを重ねる
+5. 見返りを条件に頼まない
+
+今日の一歩は、お客様を待たせる場面を一つ書き出して、工夫を考えることです。
+保存して見返してください。自分の店に合う工夫が決まらないときは、DMでご相談ください。
+
+#淡路島 #店舗経営 #口コミ #リピーター #接客 #小規模店舗</pre></details>
+</article>
+</main>
+<script>
+function setStatus(a, t) { a.querySelector('.status').textContent = t; }
+async function saveAll(btn) {
+  var a = btn.closest('article'), urls = a.dataset.files.split('|'), title = a.dataset.title;
+  setStatus(a, '準備しています…');
+  try {
+    var files = [];
+    for (var i = 0; i < urls.length; i++) {
+      var r = await fetch(urls[i]);
+      files.push(new File([await r.blob()], title + '_' + urls[i].split('/').pop(), { type: 'image/png' }));
+    }
+    if (navigator.canShare && navigator.canShare({ files: files })) {
+      await navigator.share({ files: files });
+      setStatus(a, '保存の画面を開きました。');
+      return;
+    }
+    for (var j = 0; j < files.length; j++) {
+      var l = document.createElement('a');
+      l.href = URL.createObjectURL(files[j]); l.download = files[j].name;
+      document.body.appendChild(l); l.click(); l.remove();
+      await new Promise(function (r) { setTimeout(r, 400); });
+    }
+    setStatus(a, '7枚をダウンロードしました。');
+  } catch (e) {
+    if (e && e.name === 'AbortError') { setStatus(a, '中止しました。'); }
+    else { setStatus(a, '保存できませんでした。画像を長押しして保存してください。'); }
+  }
+}
+async function copyCaption(btn) {
+  var a = btn.closest('article');
+  try { await navigator.clipboard.writeText(a.querySelector('pre').textContent); setStatus(a, 'キャプションをコピーしました。'); }
+  catch (e) { setStatus(a, 'コピーできませんでした。下の文章を長押ししてコピーしてください。'); a.querySelector('details').open = true; }
+}
+</script>
+</body>
+</html>
